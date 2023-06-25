@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -7,13 +6,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     int x = 4;
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("First App"),
+      ),
         body: Center(
           child: Container(
             child: Text("Hey there, Welcome in $x day."),
           ),
         ),
         drawer: Drawer(),
-      ),;
+      );
   }
 }
